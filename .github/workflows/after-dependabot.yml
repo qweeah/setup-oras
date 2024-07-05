@@ -43,8 +43,7 @@ jobs:
             echo -----
             git status
             echo "git fetch origin $branch --force"
-            git fetch origin "$branch" --force
-            git push origin "$branch"
+            git push origin HEAD:"$branch"
           else
             echo "No changes to commit"
           fi
